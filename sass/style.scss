@@ -453,6 +453,38 @@ html, body{
     }
 }
 
-.announce{
-    display: block;
+.announce {
+    border-top: 1px solid #EBEBEB;
+    background-color: #fff;
+    padding-top: 77px;
+    &__conteiner {
+
+    }
+    &__img {
+
+        &_1{
+            width: 500px;
+            height: 509px;
+            img{
+                width: 250px;
+                height: 100%;
+            }
+        }
+        &_2{
+            width: 500px;
+            height: 417px;
+            img{
+                width: 350px;
+                height: 417px;
+            }
+        }
+    }
+    &__content {
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__details {
+    }
 }

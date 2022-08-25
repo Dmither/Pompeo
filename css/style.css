@@ -636,5 +636,23 @@ html, body {
 }
 
 .announce {
-  display: block;
+  border-top: 1px solid #EBEBEB;
+  background-color: #fff;
+  padding-top: 77px;
+}
+.announce__img_1 {
+  width: 500px;
+  height: 509px;
+}
+.announce__img_1 img {
+  width: 250px;
+  height: 100%;
+}
+.announce__img_2 {
+  width: 500px;
+  height: 417px;
+}
+.announce__img_2 img {
+  width: 350px;
+  height: 417px;
 }
