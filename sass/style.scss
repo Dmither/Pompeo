@@ -458,10 +458,30 @@ html, body{
     background-color: #fff;
     padding-top: 77px;
     &__conteiner {
-
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 1199px){
+            width: 992px;
+        }
+        @media (max-width: 991px) {
+            width: 768px;
+            padding: 88px 15px 100px;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 60px 15px 60px;
+        }
     }
     &__img {
-
+        display: inline-block;
+        width: 500px;
+        height: 509px;
+        background-image: url(../img/svg/announce-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         &_1{
             width: 500px;
             height: 509px;
@@ -480,11 +500,31 @@ html, body{
         }
     }
     &__content {
+        
     }
     &__title {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.42;
+        color: #000000;
+        margin-bottom: 23px;
     }
     &__text {
+        font-family: 'Libre Franklin';
+        font-size: 14px;
+        line-height: 1.71;
+        color: #6C6C6C;
+        margin-bottom: 27px;
     }
     &__details {
+        padding: 10px 0;
+        span{
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.71px;
+            color: #000000;
+        }
     }
 }

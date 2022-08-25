@@ -640,6 +640,42 @@ html, body {
   background-color: #fff;
   padding-top: 77px;
 }
+.announce__conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .announce__conteiner {
+    width: 992px;
+  }
+}
+@media (max-width: 991px) {
+  .announce__conteiner {
+    width: 768px;
+    padding: 88px 15px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .announce__conteiner {
+    width: 100%;
+    padding: 60px 15px 60px;
+  }
+}
+.announce__img {
+  display: inline-block;
+  width: 500px;
+  height: 509px;
+  background-image: url(../img/svg/announce-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .announce__img_1 {
   width: 500px;
   height: 509px;
@@ -655,4 +691,29 @@ html, body {
 .announce__img_2 img {
   width: 350px;
   height: 417px;
+}
+.announce__title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.announce__text {
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  line-height: 1.71;
+  color: #6C6C6C;
+  margin-bottom: 27px;
+}
+.announce__details {
+  padding: 10px 0;
+}
+.announce__details span {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71px;
+  color: #000000;
 }
