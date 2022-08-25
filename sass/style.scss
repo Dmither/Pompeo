@@ -18,7 +18,7 @@
 / Iphone 5 /
 @media (max-width: 320px) {} */
 
-body{
+html, body{
     font-family: 'Libre Franklin';
     background-color: #999;
 }
@@ -97,6 +97,7 @@ body{
     }
     &__burger{
         display: none;
+        position: relative;
         z-index: 1;
         @media (max-width: 767px) {
             display: block;
