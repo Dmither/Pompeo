@@ -97,7 +97,6 @@ body{
     }
     &__burger{
         display: none;
-        position: relative;
         z-index: 1;
         @media (max-width: 767px) {
             display: block;

@@ -181,7 +181,6 @@ body {
 }
 .header__burger {
   display: none;
-  position: relative;
   z-index: 1;
 }
 @media (max-width: 767px) {
