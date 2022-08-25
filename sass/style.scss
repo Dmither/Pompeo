@@ -233,19 +233,20 @@ html, body{
     background-repeat: no-repeat;
     background-size:cover;
     &__container{
-        // max-width: 1200px; 2
+        width: 1200px;
         margin: 0 auto;
         padding: 192px 15px 211px;
         display: flex;
         justify-content: space-between;
         @media (max-width: 1199px){
-            // max-width: 992px;
+            width: 992px;
         }
         @media (max-width: 991px) {
-            // max-width: 768px;
+            width: 768px;
             padding: 88px 15px 100px;
         }
         @media (max-width: 767px) {
+            width: 100%;
             padding: 60px 15px 60px;
         }
     }

@@ -350,6 +350,7 @@ html, body {
   background-size: cover;
 }
 .promo__container {
+  width: 1200px;
   margin: 0 auto;
   padding: 192px 15px 211px;
   display: -webkit-box;
@@ -359,13 +360,20 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1199px) {
+  .promo__container {
+    width: 992px;
+  }
+}
 @media (max-width: 991px) {
   .promo__container {
+    width: 768px;
     padding: 88px 15px 100px;
   }
 }
 @media (max-width: 767px) {
   .promo__container {
+    width: 100%;
     padding: 60px 15px 60px;
   }
 }
