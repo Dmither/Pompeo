@@ -233,7 +233,6 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     &__container{
-        position: relative;
         max-width: 1200px;
         margin: 0 auto;
         padding: 192px 15px 211px;
@@ -330,7 +329,6 @@ body{
 .categories {
     background-color: #fff;
     &__container {
-        position: relative;
         max-width: 1200px;
         margin: 0 auto;
         padding: 120px 15px 80px;
