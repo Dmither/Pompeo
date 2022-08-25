@@ -349,6 +349,26 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.promo__container {
+  margin: 0 auto;
+  padding: 192px 15px 211px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .promo__container {
+    padding: 88px 15px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__container {
+    padding: 60px 15px 60px;
+  }
+}
 .promo__content {
   width: 512px;
 }
@@ -444,6 +464,24 @@ html, body {
 
 .categories {
   background-color: #fff;
+}
+.categories__container {
+  padding: 120px 15px 80px;
+}
+@media (max-width: 1199px) {
+  .categories__container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 991px) {
+  .categories__container {
+    padding: 88px 15px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .categories__container {
+    padding: 60px 15px 20px;
+  }
 }
 .categories__subtitle {
   margin-bottom: 16px;

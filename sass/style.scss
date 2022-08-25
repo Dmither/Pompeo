@@ -232,23 +232,23 @@ html, body{
     background-image: url(../img/jpg/promo-bg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    // &__container{
-    //     max-width: 1200px;
-    //     margin: 0 auto;
-    //     padding: 192px 15px 211px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     @media (max-width: 1199px){
-    //         max-width: 992px;
-    //     }
-    //     @media (max-width: 991px) {
-    //         max-width: 768px;
-    //         padding: 88px 15px 100px;
-    //     }
-    //     @media (max-width: 767px) {
-    //         padding: 60px 15px 60px;
-    //     }
-    // }
+    &__container{
+        // max-width: 1200px;
+        margin: 0 auto;
+        padding: 192px 15px 211px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1199px){
+            // max-width: 992px;
+        }
+        @media (max-width: 991px) {
+            // max-width: 768px;
+            padding: 88px 15px 100px;
+        }
+        @media (max-width: 767px) {
+            padding: 60px 15px 60px;
+        }
+    }
     &__content {
         width: 512px;
         @media (max-width: 767px) {
@@ -328,21 +328,18 @@ html, body{
 
 .categories {
     background-color: #fff;
-    // &__container {
-    //     max-width: 1200px;
-    //     margin: 0 auto;
-    //     padding: 120px 15px 80px;
-    //     @media (max-width: 1199px){
-    //         max-width: 992px;
-    //     }
-    //     @media (max-width: 991px) {
-    //         max-width: 768px;
-    //         padding: 88px 15px 50px;
-    //     }
-    //     @media (max-width: 767px) {
-    //         padding: 60px 15px 20px;
-    //     }
-    // }
+    &__container {
+        padding: 120px 15px 80px;
+        @media (max-width: 1199px){
+            max-width: 992px;
+        }
+        @media (max-width: 991px) {
+            padding: 88px 15px 50px;
+        }
+        @media (max-width: 767px) {
+            padding: 60px 15px 20px;
+        }
+    }
     &__subtitle {
         margin-bottom: 16px;
         text-align: center;
