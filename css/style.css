@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Large desktops and laptops /
+@media (min-width: 1200px) {}
+/ Landscape tablets and medium desktops /
+@media (min-width: 992px) and (max-width: 1199px) {}
+/ Portrait tablets and small desktops /
+@media (min-width: 768px) and (max-width: 991px) {}
+/ Landscape phones and portrait tablets /
+@media (min-width: 481px) and (max-width: 767px) {}
+/ Portrait phones and smaller /
+@media (min-width: 321px) and (max-width: 480px) {}
+/ Iphone 5 /
+@media (max-width: 320px) {} */
+body {
+  font-family: "Libre Franklin";
+  background-color: #999;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 51;
+  background-color: #fff;
+}
+.header__content {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  max-width: 1200px;
+  height: 91px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .header__content {
+    height: 60px;
+  }
+}
+.header__content::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .header__content::before {
+    display: block;
+  }
+}
+.header__logo {
+  position: relative;
+  z-index: 1;
+  height: 91px;
+  padding-top: 20px;
+  font-family: "Pacifico";
+  font-size: 33px;
+  line-height: 1.21;
+  text-align: center;
+  color: #000000;
+}
+.header__burger {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+    background-color: #000;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger span {
+    background-color: #000;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 8px;
+  }
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+}
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .menu_active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.menu__list::after {
+  content: "";
+  display: inline-block;
+  height: 41px;
+  width: 1px;
+  background-color: #EBEBEB;
+  margin: 0 17px 0 19px;
+}
+@media (max-width: 767px) {
+  .menu__list::after {
+    width: 41px;
+    height: 1px;
+    margin: 20px 0 30px 0;
+    background-color: #6C6C6C;
+  }
+}
+.menu__link {
+  margin: 0 20px;
+  font-family: "Poppins";
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6C6C6C;
+}
+@media (max-width: 767px) {
+  .menu__link {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #000;
+  }
+}
+.menu__link_active {
+  color: #AC1313;
+}
+.menu__cart {
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  padding-left: 25px;
+}
+@media (max-width: 767px) {
+  .menu__cart {
+    font-size: 20px;
+    padding-left: 35px;
+  }
+}
+.menu__cart::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/svg/header-cart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  .menu__cart::before {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+}
+
+.main {
+  padding-top: 100px;
+}
