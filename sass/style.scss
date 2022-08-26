@@ -724,3 +724,69 @@ html, body{
     }
 }
 
+.new-promo {
+    background-image: url(../img/jpg/new-promo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 120px 15px;
+        @media (max-width: 1199px){
+            width: 992px;
+        }
+        @media (max-width: 991px) {
+            width: 768px;
+            padding: 88px 15px 88px;
+            // aaaaaaaaaaaaaa
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 60px 15px 60px;
+        }
+    }
+    &__content{
+        max-width: 510px;
+    }
+    &__subtitle {
+        margin-bottom: 7px;
+    }
+    &__title {
+        font-size: 36px;
+        width: 510px;
+        margin-bottom: 13px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 440px;
+        font-family: 'Libre Franklin';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #6C6C6C;
+        span{
+            color: #AC1313;
+            text-decoration: underline;
+        }
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        background: #AC1313;
+        padding: 20px 40px;
+        span{
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.83;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+}
