@@ -865,4 +865,7 @@ html, body {
   .announce__details {
     margin-bottom: 28px;
   }
+  .announce__details span {
+    font-size: 18px;
+  }
 }
